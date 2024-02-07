@@ -35,3 +35,4 @@ terraform.rc
 
 ## PEM-encoded certificate data
 *.pem
+.vscode/settings.json
