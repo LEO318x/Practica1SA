@@ -30,7 +30,10 @@
         </tr>
     </tbody>
 </table>
+
+---
 > ## DOCUMENTACIÓN
+
 ## \\> Instalación de Terraform
 ---
 ### Ubuntu
