@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Avanzado 1S2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo.jpg'); /* Ruta imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            overflow: hidden; /* Evita la barra de desplazamiento horizontal */
+        }
+
+        h1 {
+            color: #ffd700; /* Color dorado */
+            text-shadow: 2px 2px 4px #333;
+        }
+
+        .info {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente negro */
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        p {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Software Avanzado 1S2024 - Práctica 1</h1>
+
+    <div class="info">
+        <p><strong>Carnet:</strong> 201212535</p>
+        <p><strong>Nombres y Apellidos:</strong> Mike Leonel Molina García</p>
+        <p><strong>Hora y Fecha Actual:</strong> <span id="datetime"></span></p>
+    </div>
+
+    <script>
+        // Obtener la hora y fecha actual
+        function updateDateTime() {
+            var now = new Date();
+            var dateTimeString = now.toLocaleString();
+            document.getElementById('datetime').innerHTML = dateTimeString;
+        }
+
+        // Actualizar cada segundo
+        setInterval(updateDateTime, 1000);
+
+        // Llamar a la función inicialmente
+        updateDateTime();
+    </script>
+</body>
+</html>
