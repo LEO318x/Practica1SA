@@ -40,7 +40,7 @@
 Para realizar la instalación en nuestra distribución de ubuntu necesitamos ejecutar los comandos que se describen a continuación:
 1.  Actualizamos nuestros repositorios e instalamos las dependencias necesarias para proceder con la instalación de terraform.
     *   ```plaintext
-        sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+        $ sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
         ```
         
 2.  Instalamos las credenciales de Hashicorp
@@ -298,10 +298,12 @@ En nuestra instancia maestra realizamos la siguiente configuración para manipul
 ---
 ## \\> Como funciona Terraform
 Terraform funciona mediante la creación de archivos de configuración que definen la infraestructura deseada. Estos archivos se escriben en HCL (HashiCorp Configuration Language), un lenguaje declarativo que describe el estado final de la infraestructura. Terraform luego compara el estado actual de la infraestructura con el estado deseado y realiza los cambios necesarios para que coincidan.
+
 **Beneficios:**
 *   **Automatización:** Terraform automatiza la creación y gestión de la infraestructura, lo que reduce el tiempo y el esfuerzo manual.
 *   **Infraestructura como código:** Terraform permite definir la infraestructura como código, lo que la hace más consistente, reproducible y versionable.
 *   **Flexibilidad:** Terraform soporta una amplia gama de proveedores de infraestructura, lo que la hace flexible y adaptable a diferentes entornos.
+  
 **Ejemplos de uso:**
 *   Provisionamiento de servidores en la nube
 *   Creación de redes virtuales
@@ -315,10 +317,12 @@ Ansible es una herramienta de automatización de tareas que se basa en SSH para 
 *   Configuración de archivos
 *   Ejecución de scripts
 *   Orquestación de tareas entre varios servidores
+  
 **Beneficios:**
 *   **Sin agente:** Ansible no requiere la instalación de un agente en los servidores, lo que lo hace ligero y fácil de usar.
 *   **Flexibilidad:** Ansible es una herramienta muy flexible que se puede utilizar para automatizar una amplia gama de tareas.
 *   **Sencillo:** Ansible tiene una curva de aprendizaje relativamente suave, lo que lo hace accesible a usuarios principiantes.
+  
 **Ejemplos de uso:**
 *   Implementación de aplicaciones
 *   Gestión de servidores
